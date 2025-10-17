@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+#root {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar, .hero, .hero-content, .nav-links, section, div {
+  max-width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,124 @@
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #10B981, #047857); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 0; 
+  min-height: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar-logo a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: color 0.3s ease;
+  white-space: nowrap
+}
+
+.navbar-logo a:hover {
+  color: #A7F3D0; 
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.donate {
+color: #047857;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.donate:hover {
+  background-color: #A7F3D0;
+  color: #047857;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, #10B981, #047857);
+    transition: max-height 0.4s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    max-height: 500px;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  .donate {
+    margin: 10px auto;
+  }
+}
+.nav-links li a, .donate {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
