@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# HopeBridge Foundation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo](screenshots/logo.png)
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A fully responsive, modern charity website built with **React.js**, **TypeScript**, **HTML**, and **CSS**, designed to showcase environmental projects and volunteer opportunities.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 Overview
 
-## Expanding the ESLint configuration
+HopeBridge Foundation is dedicated to creating a greener, healthier planet through community action.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This website demonstrates:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- A **clean and modern design** with a green-themed color scheme
+- Fully **responsive layout** for mobile, tablet, and desktop
+- Clear **call-to-action buttons** for donations and volunteering
+- Smooth **scrolling navigation**
+- **Reusable React components** for scalability
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📌 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Hero banner with CTA buttons
+- About Us section with mission and impact
+- Projects section with detailed cards and impact highlights
+- Get Involved section with multiple ways to participate
+- Contact form and contact details
+- Footer with navigation and social links
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🖼 Screenshots
+
+> All screenshots are in the `/screenshots` folder.
+
+**Home / Hero Section**  
+![Hero Section](screenshots/hopebridge-1.png)
+
+**About Section**  
+![About Section](screenshots/hopebridge-2.png)
+
+**Projects Section**  
+![Projects Section](screenshots/hopebridge-3.png)
+
+**Get Involved Section**  
+![Get Involved Section](screenshots/hopebridge-4.png)
+
+**Contact Section**  
+![Contact Section](screenshots/hopebridge-5.png)
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js + TypeScript
+- **Markup & Styling:** HTML5, CSS3
+- **Version Control:** Git & GitHub
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:  
+```bash
+git clone https://github.com/YOUR_USERNAME/hopebridge-foundation.git
